@@ -4,11 +4,15 @@ function AnalyticsCard({ title, value }) {
 
   return (
 
-    <div>
+    <div className="bg-white p-6 rounded shadow">
 
-      <h3>{title}</h3>
+      <h3 className="text-lg font-semibold">
+        {title}
+      </h3>
 
-      <p>{value}</p>
+      <p className="text-3xl font-bold text-yellow-500 mt-2">
+        {value}
+      </p>
 
     </div>
 

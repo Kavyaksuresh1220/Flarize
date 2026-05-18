@@ -1,46 +1,51 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
 
   return (
 
-    <aside>
+    <aside className="w-64 min-h-screen bg-white shadow-lg hidden md:block">
 
-      <div>
+      <div className="p-6 text-2xl font-bold text-yellow-500">
 
-        <h2>Solar CRM</h2>
+        Solar CRM
 
       </div>
 
-      <nav>
+      <nav className="px-4 space-y-3">
 
-        <ul>
+        <Link to="/">
 
-          <li>
-            <button>
-              Dashboard
-            </button>
-          </li>
+          <button className="w-full text-left px-4 py-2 rounded bg-yellow-100 hover:bg-yellow-200">
+            Dashboard
+          </button>
 
-          <li>
-            <button>
-              Leads
-            </button>
-          </li>
+        </Link>
 
-          <li>
-            <button>
-              Add Lead
-            </button>
-          </li>
+        <Link to="/leads">
 
-          <li>
-            <button>
-              Analytics
-            </button>
-          </li>
+          <button className="w-full text-left px-4 py-2 rounded bg-yellow-100 hover:bg-yellow-200">
+            Leads
+          </button>
 
-        </ul>
+        </Link>
+
+        <Link to="/add-lead">
+
+          <button className="w-full text-left px-4 py-2 rounded bg-yellow-100 hover:bg-yellow-200">
+            Add Lead
+          </button>
+
+        </Link>
+
+        <Link to="/edit-lead">
+
+          <button className="w-full text-left px-4 py-2 rounded bg-yellow-100 hover:bg-yellow-200">
+            Edit Lead
+          </button>
+
+        </Link>
 
       </nav>
 

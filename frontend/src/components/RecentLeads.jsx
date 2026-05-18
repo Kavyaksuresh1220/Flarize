@@ -4,18 +4,22 @@ function RecentLeads() {
 
   return (
 
-    <div>
+    <div className="bg-white p-6 rounded shadow">
 
-      <h2>Recent Leads</h2>
+      <h2 className="text-2xl font-bold mb-4">
+        Recent Leads
+      </h2>
 
-      <table>
+      <table className="w-full">
 
         <thead>
 
           <tr>
 
             <th>Name</th>
+
             <th>Location</th>
+
             <th>Status</th>
 
           </tr>
@@ -24,11 +28,13 @@ function RecentLeads() {
 
         <tbody>
 
-          <tr>
+          <tr className="text-center">
 
-            <td>Rajesh Kumar</td>
-            <td>Kochi</td>
-            <td>New Lead</td>
+            <td>Priya</td>
+
+            <td>Thrissur</td>
+
+            <td>Won</td>
 
           </tr>
 

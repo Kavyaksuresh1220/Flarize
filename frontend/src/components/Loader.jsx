@@ -4,9 +4,11 @@ function Loader() {
 
   return (
 
-    <div>
+    <div className="flex justify-center items-center h-screen">
 
-      <h2>Loading...</h2>
+      <h1 className="text-2xl font-bold">
+        Loading...
+      </h1>
 
     </div>
 
