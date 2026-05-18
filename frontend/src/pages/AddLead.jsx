@@ -14,7 +14,7 @@ function AddLead() {
 
       <div className="flex-1">
 
-        <Navbar />
+     
 
         <div className="p-6">
 

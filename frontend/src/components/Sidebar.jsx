@@ -39,13 +39,7 @@ function Sidebar() {
 
         </Link>
 
-        <Link to="/edit-lead">
-
-          <button className="w-full text-left px-4 py-2 rounded bg-yellow-100 hover:bg-yellow-200">
-            Edit Lead
-          </button>
-
-        </Link>
+       
 
       </nav>
 

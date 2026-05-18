@@ -53,3 +53,14 @@ export const deleteLeadAPI = async (id) => {
     )
 
 }
+
+export const dashboardAPI = async () => {
+
+    return await commonAPI(
+        "GET",
+        `${serverURL}/api/dashboard`,
+        {},
+        {}
+    )
+
+}

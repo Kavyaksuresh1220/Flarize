@@ -25,7 +25,7 @@ function Leads() {
 
       <div className="flex-1">
 
-        <Navbar />
+       
 
 
 
