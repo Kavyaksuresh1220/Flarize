@@ -1,6 +1,13 @@
 import React from "react";
 
-function FilterBar() {
+function FilterBar({
+  search,
+  setSearch,
+  status,
+  setStatus,
+  date,
+  setDate
+}) {
 
   return (
 
@@ -10,17 +17,49 @@ function FilterBar() {
         type="text"
         placeholder="Search Location"
         className="border p-2 rounded"
+        value={search}
+        onChange={(e) =>
+          setSearch(e.target.value)
+        }
       />
 
-      <select className="border p-2 rounded">
 
-        <option>Status</option>
+
+      <select
+        className="border p-2 rounded"
+        value={status}
+        onChange={(e) =>
+          setStatus(e.target.value)
+        }
+      >
+
+        <option value="">
+          All Status
+        </option>
+
+        <option value="Residential">
+          Residential
+        </option>
+
+        <option value="Commercial">
+          Commercial
+        </option>
+
+        <option value="Industrial">
+          Industrial
+        </option>
 
       </select>
+
+
 
       <input
         type="date"
         className="border p-2 rounded"
+        value={date}
+        onChange={(e) =>
+          setDate(e.target.value)
+        }
       />
 
     </div>
