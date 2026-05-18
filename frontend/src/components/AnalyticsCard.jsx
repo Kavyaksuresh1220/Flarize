@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
 
-function AnalyticsCard() {
+function AnalyticsCard({ title, value }) {
+
   return (
+
     <div>
-      
+
+      <h3>{title}</h3>
+
+      <p>{value}</p>
+
     </div>
-  )
+
+  );
 }
 
-export default AnalyticsCard
+export default AnalyticsCard;
